@@ -4,10 +4,10 @@
 
 افزونه کروم برای راست‌چین کردن متن‌های فارسی و تغییر فونت سایت [claude.ai](https://claude.ai) به **وزیرمتن** (نسخه محلی، بدون نیاز به اینترنت)
 
-![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)
-![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)
-![License](https://img.shields.io/github/license/jnjal/claude-rtl)
-
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)](#)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)](#)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/jnjal/claude-rtl/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/badge/downloads-releases-blue?logo=github)](https://github.com/jnjal/claude-rtl/releases)
 ---
 
 ## ✨ ویژگی‌ها
