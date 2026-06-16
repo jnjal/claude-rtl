@@ -1,7 +1,3 @@
-/* =============================================
-   Claude RTL & Font Fixer v2.3
-   ============================================= */
-
 @font-face {
     font-family: 'Vazirmatn Local';
     src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Thin.ttf') format('truetype');
@@ -48,10 +44,6 @@
     font-weight: 900; font-style: normal; font-display: swap;
 }
 
-/* =============================================
-   فونت — فقط تگ‌های متنی محتوا
-   span عمداً حذف شده — کلاد از span برای SVG آیکون استفاده می‌کنه
-   ============================================= */
 body.claude-rtl-enabled p,
 body.claude-rtl-enabled li,
 body.claude-rtl-enabled h1,
@@ -68,7 +60,6 @@ body.claude-rtl-enabled [role="textbox"] {
     font-family: 'Vazirmatn Local', Tahoma, Arial, sans-serif !important;
 }
 
-/* span فقط داخل محتوای متنی — نه span مستقیم دکمه/آیکون */
 body.claude-rtl-enabled p > span,
 body.claude-rtl-enabled li > span,
 body.claude-rtl-enabled h1 > span,
@@ -79,9 +70,6 @@ body.claude-rtl-enabled th > span {
     font-family: 'Vazirmatn Local', Tahoma, Arial, sans-serif !important;
 }
 
-/* =============================================
-   RTL — همون تگ‌ها، direction راست به چپ
-   ============================================= */
 body.claude-rtl-enabled p,
 body.claude-rtl-enabled li,
 body.claude-rtl-enabled h1,
@@ -100,9 +88,6 @@ body.claude-rtl-enabled [role="textbox"] {
     unicode-bidi: plaintext;
 }
 
-/* =============================================
-   کد — همیشه LTR، monospace — override قوی
-   ============================================= */
 body.claude-rtl-enabled code,
 body.claude-rtl-enabled pre,
 body.claude-rtl-enabled kbd,
