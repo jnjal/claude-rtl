@@ -29,6 +29,11 @@
 ```
 Code → Download ZIP
 ```
+یا از releases
+
+```
+releases → latest.zip
+```
 
 یا با git:
 
