@@ -1,6 +1,5 @@
 /* =============================================
-   Claude RTL & Font Fixer v2.0
-   فونت وزیرمتن محلی
+   Claude RTL & Font Fixer v2.3
    ============================================= */
 
 @font-face {
@@ -50,38 +49,51 @@
 }
 
 /* =============================================
-   حالت غیرفعال - هیچ استایلی اعمال نمی‌شه
+   فونت — فقط تگ‌های متنی محتوا
+   span عمداً حذف شده — کلاد از span برای SVG آیکون استفاده می‌کنه
    ============================================= */
-body.claude-rtl-disabled * {
-    /* reset توسط content.js مدیریت می‌شه */
-}
-
-/* =============================================
-   فونت - فقط محتوای چت، نه کل UI
-   ============================================= */
-body.claude-rtl-enabled .font-claude-message,
-body.claude-rtl-enabled [data-testid="user-message"],
-body.claude-rtl-enabled .prose,
-body.claude-rtl-enabled [contenteditable="true"],
+body.claude-rtl-enabled p,
+body.claude-rtl-enabled li,
+body.claude-rtl-enabled h1,
+body.claude-rtl-enabled h2,
+body.claude-rtl-enabled h3,
+body.claude-rtl-enabled h4,
+body.claude-rtl-enabled h5,
+body.claude-rtl-enabled h6,
+body.claude-rtl-enabled td,
+body.claude-rtl-enabled th,
 body.claude-rtl-enabled textarea,
+body.claude-rtl-enabled [contenteditable="true"],
 body.claude-rtl-enabled [role="textbox"] {
     font-family: 'Vazirmatn Local', Tahoma, Arial, sans-serif !important;
 }
 
+/* span فقط داخل محتوای متنی — نه span مستقیم دکمه/آیکون */
+body.claude-rtl-enabled p > span,
+body.claude-rtl-enabled li > span,
+body.claude-rtl-enabled h1 > span,
+body.claude-rtl-enabled h2 > span,
+body.claude-rtl-enabled h3 > span,
+body.claude-rtl-enabled td > span,
+body.claude-rtl-enabled th > span {
+    font-family: 'Vazirmatn Local', Tahoma, Arial, sans-serif !important;
+}
+
 /* =============================================
-   RTL - فقط پاراگراف‌های محتوا
+   RTL — همون تگ‌ها، direction راست به چپ
    ============================================= */
-body.claude-rtl-enabled [data-testid="user-message"] p,
-body.claude-rtl-enabled [data-testid="user-message"] span,
-body.claude-rtl-enabled .font-claude-message > p,
-body.claude-rtl-enabled .font-claude-message > ul,
-body.claude-rtl-enabled .font-claude-message > ol,
-body.claude-rtl-enabled .font-claude-message > li,
-body.claude-rtl-enabled .prose > p,
-body.claude-rtl-enabled .prose > ul > li,
-body.claude-rtl-enabled .prose > ol > li,
-body.claude-rtl-enabled [contenteditable="true"],
+body.claude-rtl-enabled p,
+body.claude-rtl-enabled li,
+body.claude-rtl-enabled h1,
+body.claude-rtl-enabled h2,
+body.claude-rtl-enabled h3,
+body.claude-rtl-enabled h4,
+body.claude-rtl-enabled h5,
+body.claude-rtl-enabled h6,
+body.claude-rtl-enabled td,
+body.claude-rtl-enabled th,
 body.claude-rtl-enabled textarea,
+body.claude-rtl-enabled [contenteditable="true"],
 body.claude-rtl-enabled [role="textbox"] {
     direction: rtl !important;
     text-align: right !important;
@@ -89,15 +101,15 @@ body.claude-rtl-enabled [role="textbox"] {
 }
 
 /* =============================================
-   کد - همیشه LTR، فونت monospace حفظ می‌شه
+   کد — همیشه LTR، monospace — override قوی
    ============================================= */
 body.claude-rtl-enabled code,
 body.claude-rtl-enabled pre,
 body.claude-rtl-enabled kbd,
 body.claude-rtl-enabled samp,
 body.claude-rtl-enabled .font-mono,
-body.claude-rtl-enabled code *,
-body.claude-rtl-enabled pre * {
+body.claude-rtl-enabled pre *,
+body.claude-rtl-enabled code * {
     direction: ltr !important;
     text-align: left !important;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
