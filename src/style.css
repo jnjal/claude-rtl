@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body, html, p, span, div, h1, h2, h3, h4, h5, h6, textarea, [contenteditable="true"] {
+    font-family: 'Vazirmatn Local', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+p, 
+.prose, 
+[data-testid="user-message"], 
+.font-claude-message, 
+textarea, 
+[contenteditable="true"],
+[role="textbox"] {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+code, 
+pre, 
+kbd, 
+samp, 
+.font-mono,
+code * {
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+pre {
+    padding: 1rem !important;
+    overflow-x: auto !important;
+}
