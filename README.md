@@ -59,7 +59,7 @@ chrome://extensions
 
 ## 📁 ساختار پروژه
 
-```
+```bash
 claude-rtl/
 ├── src/
 │   ├── manifest.json      # تنظیمات افزونه (Manifest V3)
